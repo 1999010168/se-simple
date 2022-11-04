@@ -1,0 +1,30 @@
+{
+  "name": "se-simple",
+  "version": "0.0.0",
+  "scripts": {
+    "dev-server": "cross-env port=9188 name=fyb node backend/app.mjs",
+    "syncdb": "cross-env name=fyb node backend/app.mjs -s",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "dist": "ncc build backend/app.mjs --no-source-map-register && npm run build && cp pm2.json dist/pm2.json"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "commander": "^8.3.0",
+    "echarts": "^5.2.2",
+    "element-plus": "^1.1.0-beta.24",
+    "express": "^4.17.1",
+    "mitt": "^3.0.0",
+    "nanoid": "^3.1.30",
+    "sequelize": "^6.8.0",
+    "sqlite3": "^5.0.2",
+    "vue": "^3.2.16",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "cross-env": "^7.0.3",
+    "vite": "^2.6.4"
+  }
+}

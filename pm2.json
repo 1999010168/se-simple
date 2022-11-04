@@ -1,0 +1,36 @@
+{
+  "apps": [
+    {
+      "name": "SeManagerSimple_fyb",
+      "script": "index.js",
+      "log_date_format": "YYYY-MM-DD HH:mm:ss ",
+      "error_file": "./log/se.log",
+      "out_file": "./log/se.log",
+      "autorestart": true,
+      "merge_logs": true,
+      "args": [],
+      "env": {
+        "port": 9188,
+        "name": "fyb",
+        "TZ": "Asia/Shanghai",
+        "NODE_ENV": "production",
+      }
+    },
+    {
+      "name": "SeManagerSimple_wjg",
+      "script": "index.js",
+      "log_date_format": "YYYY-MM-DD HH:mm:ss ",
+      "error_file": "./log/se.log",
+      "out_file": "./log/se.log",
+      "autorestart": true,
+      "merge_logs": true,
+      "args": [],
+      "env": {
+        "port": 9189,
+        "name": "wjg",
+        "TZ": "Asia/Shanghai",
+        "NODE_ENV": "production",
+      }
+    }
+  ]
+}
