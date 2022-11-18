@@ -2,7 +2,7 @@
   "name": "se-simple",
   "version": "0.0.0",
   "scripts": {
-    "dev-server": "cross-env port=9188 name=fyb node backend/app.mjs",
+    "dev-server": "cross-env port=9188 data=data/2022/fyb.sqlite node backend/app.mjs",
     "syncdb": "cross-env name=fyb node backend/app.mjs -s",
     "dev": "vite",
     "build": "vite build",

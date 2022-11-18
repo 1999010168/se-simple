@@ -2,7 +2,7 @@ import pkg from 'sequelize';
 const { Sequelize, DataTypes } = pkg;
 const sequelize = new Sequelize({
   dialect: 'sqlite',
-  storage: `${process.env.name || 'database'}.sqlite`,
+  storage: process.env.data,
   logging: false
 });
 
